@@ -4,7 +4,56 @@
 
 @use "./util/index";
 
+
+// header
+
 header{
     background-color: index.$initial_nav_bg;
-    height: 45px;
+    color: index.$text_color ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    
+}
+// left_side_start
+header .left_side{
+    display: flex;
+    gap: 10px;
+    margin-left: 150px;
+    font-weight: 500;
+   
+}
+header .left_side .icon{
+    color: index.$icon_color
+}
+
+.left_side:hover .number {
+    color: rgb(219, 71, 70);
+    transition:  0.5s ease;
+}
+.left_side:hover .icon {
+    color: white;
+    transition: 0.5s ease;
+}
+// left_side_end
+
+// right_side_start
+header .right_side{
+    display: flex;
+    gap: 10px;
+    margin-right: 150px;
+}
+
+header .right_side .icon{
+    font-size: 22px;
+}
+header .right_side .login{
+    font-size: 17px;
+    font-weight: 500;
+}
+header .right_side:hover{
+    color: index.$icon_color;
+    cursor: pointer;
+    transition: 0.5s ease;
 }

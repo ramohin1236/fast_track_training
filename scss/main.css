@@ -13,5 +13,51 @@ h1 {
 
 header {
   background-color: #262B62;
-  height: 45px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+header .left_side {
+  display: flex;
+  gap: 10px;
+  margin-left: 150px;
+  font-weight: 500;
+}
+
+header .left_side .icon {
+  color: rgb(219, 71, 70);
+}
+
+.left_side:hover .number {
+  color: rgb(219, 71, 70);
+  transition: 0.5s ease;
+}
+
+.left_side:hover .icon {
+  color: white;
+  transition: 0.5s ease;
+}
+
+header .right_side {
+  display: flex;
+  gap: 10px;
+  margin-right: 150px;
+}
+
+header .right_side .icon {
+  font-size: 22px;
+}
+
+header .right_side .login {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+header .right_side:hover {
+  color: rgb(219, 71, 70);
+  cursor: pointer;
+  transition: 0.5s ease;
 }/*# sourceMappingURL=main.css.map */
