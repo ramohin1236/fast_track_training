@@ -1,0 +1,10 @@
+// partials
+@forward "./base/index";
+
+
+@use "./util/index";
+
+header{
+    background-color: index.$initial_nav_bg;
+    height: 45px;
+}
