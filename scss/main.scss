@@ -28,7 +28,7 @@ header .left_side .icon{
     color: index.$icon_color
 }
 
-.left_side:hover .number {
+.left_side:hover .numberr {
     color: rgb(219, 71, 70);
     transition:  0.5s ease;
 }
@@ -112,6 +112,174 @@ ul.back-menu li>a:hover{
 .bg{
     background-color: #131857;
 }
+// navbar end
+
+// main section start
+
+.main_container {
+    position: relative;
+    height: 100vh;
+    background-image: url("https://fasttracklifeuk.co.uk/wp-content/uploads/2023/09/page-LIFE-in-theuk-test-training-backround.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(103, 103, 240, 0.5) 0%, rgba(103, 103, 240, 0.5) 50%, #DB4746 50%, #DB4746 100%);
+    z-index: 1;
+}
+
+.main_container img {
+    display: none;
+}
+
+.content {
+    position: absolute;
+    margin-top: -40%;
+    left: 20%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.content .pass {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content .rate {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.service {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    text-align: left;
+    color: white;
+    z-index: 2;
+}
+.pass{
+    font-size: large;
+    font-weight: 500;
+}
+.rate{
+    font-size: 40px;
+    font-weight: 900;
+}
+.service .cheak {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.service .icon {
+    margin-right: 0.5rem;
+}
+.icon{
+    color: index.$icon_color;
+}
+
+.cheak:hover{
+.icon{
+    color: white;
+
+}
+    color: index.$icon_color;
+    transition: 0.4s ease;
+}
+// button
+
+.button button{
+
+    position: absolute;
+    z-index: 2;
+    margin-top: -80px;
+   padding: 20px 80px 20px 80px;
+   border-radius: 40px;
+   font-size: 20px;
+   font-weight: 900;
+   border: none;
+   color: #131857;
+   transition: transform 0.3s ease;
+}
+.button button:hover {
+    transform: translateY(10px); /* Moves the button 10px down on hover */
+}
+
+
+// imagae content
+.image-content{
+    position: relative;
+    z-index: 2;
+    top: -450px;
+    margin-left: 600px;
+}
+.image-women{
+    width: 400px;
+}
+.image-badge{
+    position: relative;
+    width: 200px;
+    right: 460px;
+    bottom: 100px;
+}
+
+// populated
+.populated{
+    position: relative;
+    background-color: white;
+    border: none;
+    z-index: 2;
+    top: -850px;
+    left: 950px;
+    height: 140px;
+    width: 191px;
+    
+   border-radius: 20px;
+}
+.number{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    padding: 10px;
+   
+}
+.student{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //responsive design
 
 // small_navbar_responsive
@@ -135,6 +303,7 @@ ul.back-menu li>a:hover{
     }
     
 }
+// main navbar 
 @media (max-width: 991px) {
     .dropdown-fullwidth {
         width: 100vmax;
@@ -142,6 +311,8 @@ ul.back-menu li>a:hover{
         background-color: index.$initial_nav_bg;
         margin-left: -281px;
         padding: 30px;
+        z-index: 70;
+        position: relative;
        
         
     }
@@ -150,3 +321,253 @@ ul.back-menu li>a:hover{
     }
 }
 
+
+
+// tablet
+@media (max-width: 768px) {
+    .service {
+        position: absolute;
+        margin-top: -20%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        text-align: left;
+        color: white;
+        z-index: 2;
+    }
+    .pass{
+        font-size: 1rem;
+    }
+    .rate{
+        font-size: 2rem;
+    }
+    .main_container {
+        height: 200vh !important; 
+    }
+    .content{
+        height: 100vh;
+    }
+    .content .pass {
+        margin-top: 150px;
+        font-size: 1rem;
+    }
+
+    .content .rate {
+        font-size: 2rem;
+    }
+
+    .service .cheak {
+        font-size: 1.2rem;
+    }
+
+    .main_container {
+        height: 50vh;
+    }
+
+    .content {
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+    }
+
+    .service {
+        
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+    }
+
+     // button
+     .button button{
+
+        position: absolute;
+        z-index: 2;
+        margin-left: 110px;
+        margin-top: -400px;
+       padding: 10px 25px 10px 30px;
+       border-radius: 40px;
+       font-size: 15px;
+       font-weight: 700;
+       color: #131857;
+       transition: transform 0.3s ease;
+    }
+    .button button:hover {
+        transform: translateY(10px); /* Moves the button 10px down on hover */
+    }
+
+
+    // imagae content
+.image-content{
+  
+  
+  margin-left: 200px;
+    margin-top: 150px;
+     
+  
+}
+.image-women{
+    width: 200px;
+}
+.image-badge{
+    position: relative;
+    width: 100px;
+    bottom: 45px;
+    right: 250px;
+    
+   
+}
+.populated{
+    position: relative;
+    background-color: white;
+    border: none;
+    z-index: 2;
+    top: -650px;
+    left: 350px;
+    height: 100px;
+    width: 120px;
+    
+   border-radius: 20px;
+}
+.number{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    padding: 10px;
+   
+}
+.student{
+    font-size: 10px;
+  font-weight: 500;
+    text-align: center;
+
+}
+
+}
+
+
+
+
+// mobile
+@media (max-width: 576px) {
+    .service {
+        position: absolute;
+        margin-top: -40%;
+        left: 20%;
+        transform: translate(-50%, -20%);
+        text-align: center;
+        color: white;
+        z-index: 2;
+    }
+    
+    .pass{
+        font-size: 1rem;
+    }
+    .rate{
+        font-size: 2rem;
+    }
+    .dropdown-fullwidth {
+        width: 100vmax;
+        margin-top: 20px;
+        background-color: index.$initial_nav_bg;
+        margin-left: -281px;
+        padding: 30px;
+        z-index: 70;
+        position: relative;
+    }
+    .content .pass {
+        font-size: 1.2rem;
+    }
+
+    .content .rate {
+        font-size: 1.5rem;
+    }
+
+    .service .cheak {
+        font-size: 1rem;
+    }
+
+    .main_container {
+        height: 50vh;
+    }
+
+    .content {
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -5%);
+    }
+
+    .service {
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, 5%);
+    }
+
+    // button
+    .button button{
+
+        position: absolute;
+        border: none;
+        z-index: 2;
+        margin-left: 110px;
+        margin-top: -500px;
+       padding: 5px 10px 5px 10px;
+       border-radius: 40px;
+       font-size: 15px;
+       font-weight: 700;
+       color: #131857;
+       transition: transform 0.3s ease;
+    }
+    .button button:hover {
+        transform: translateY(10px); /* Moves the button 10px down on hover */
+    }
+
+    // image content
+    .image-content{
+  
+  
+          margin-left: 140px;
+          margin-top: 50px;
+           
+        
+      }
+      .image-women{
+          width: 200px;
+      }
+      .image-badge{
+          position: relative;
+          width: 100px;
+          bottom: 245px;
+          margin-left: 10px;
+          right: 0px;
+          
+         
+      }
+
+
+      .populated{
+        position: relative;
+        background-color: white;
+        border: none;
+        z-index: 2;
+        top: -650px;
+        margin-left: -50px;
+        height: 100px;
+        width: 120px;
+        
+       border-radius: 20px;
+    }
+    .number{
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 40px;
+        padding: 10px;
+       
+    }
+    .student{
+        font-size: 10px;
+      font-weight: 500;
+        text-align: center;
+    
+    }
+}
