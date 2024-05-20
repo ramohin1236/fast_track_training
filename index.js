@@ -109,6 +109,13 @@ $(document).ready(function(){
         window.location.href = 'https://fasttracklifeuk.co.uk/contact-us/';
     });
 });
+// click get_information and go to its home page
+$(document).ready(function(){
+    $('#get_information').click(function(event) {
+        event.preventDefault(); 
+        window.location.href = 'https://fasttracklifeuk.co.uk/free-assessment-life-in-the-uk-course/';
+    });
+});
 
 
 // calculate 5k, 10k,15k, 20k
