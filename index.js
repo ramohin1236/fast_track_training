@@ -109,3 +109,36 @@ $(document).ready(function(){
         window.location.href = 'https://fasttracklifeuk.co.uk/contact-us/';
     });
 });
+
+
+// calculate 5k, 10k,15k, 20k
+
+$(document).ready(function() {
+    var $number = $('.number');
+    var startValue = 5000;
+    var endValue = 20000;
+    var increment = 5000;
+    var duration = 2000; 
+    var steps = (endValue - startValue) / increment;
+    var stepDuration = duration / steps;
+    var currentStep = 0;
+
+    $number.text('0k+'); 
+
+    function updateNumber() {
+        var value = startValue + (currentStep * increment);
+        $number.text(value / 1000 + 'k+');
+        if (currentStep < steps) {
+            currentStep++;
+            setTimeout(updateNumber, stepDuration);
+        } else {
+            $number.text(endValue / 1000 + 'k+');
+        }
+    }
+
+  
+    $number.css({ top: '-100px', position: 'absolute' }).animate({ top: 0 }, duration);
+
+   
+    setTimeout(updateNumber, 200);
+});
